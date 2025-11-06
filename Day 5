@@ -1,0 +1,41 @@
+Moderate Problem:
+Count the Notebooks
+You know that 1 kg of pulp can be used to make 1000 pages and 1 notebook consists of 100 pages.
+
+Suppose a notebook factory receives N kg of pulp, how many notebooks can be made from that?
+
+Solution:
+#include <stdio.h>
+
+int main() {
+	int x,y;
+	scanf("%d",&x);
+	for(int i=0;i<x;i++){
+	    scanf("%d",&y);
+	    printf("%d\n",y*10);
+	    
+	}
+}
+
+Easy problem:
+Waiting Time
+Chef is eagerly waiting for a piece of information. His secret agent told him that this information would be revealed to him after K weeks.
+X days have already passed and Chef is getting restless now. Find the number of remaining days Chef has to wait for, to get the information.
+
+It is guaranteed that the information has not been revealed to the Chef yet.
+
+Solution:
+#include <stdio.h>
+
+int main() {
+	int x,y,z;
+	scanf("%d",&x);
+	for(int i=0;i<x;i++){
+	    scanf("%d%d",&y,&z);
+	    y=y*7;
+	    printf("%d\n",y-z);
+	    
+	}
+
+}
+
