@@ -1,0 +1,29 @@
+Easy
+
+problem
+
+Car Trip
+Chef rented a car for a day.
+
+Usually, the cost of the car is Rs 10 per km. However, since Chef has booked the car for the whole day, he needs to pay for at least 300 kms even if the car runs less than 300 kms.
+
+If the car ran X kms, determine the cost Chef needs to pay.
+
+code
+
+#include <stdio.h>
+
+int main() {
+	int x,y;
+	scanf("%d",&x);
+	for(int i=0;i<x;i++){
+	    scanf("%d",&y);
+	    if(y<300){
+	        printf("3000\n");
+	    }
+	    else{
+	        printf("%d\n",y*10);
+	    }
+	}
+
+}
