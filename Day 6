@@ -30,7 +30,7 @@ C
 C, — the amount bid by Alice, Bob, and Charlie respectively.
 #include <stdio.h>
 
-int main(void) {
+int main() {
     int t;
     scanf("%d", &t);
 
