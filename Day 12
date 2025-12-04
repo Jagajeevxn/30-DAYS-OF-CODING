@@ -1,0 +1,44 @@
+Messi vs Ronaldo
+In Chefland, a football player gets 
+2
+2 points for each goal and 
+1
+1 point for each assist.
+
+Messi has 
+A
+A goals and 
+B
+B assists this season, whereas Ronaldo has 
+X
+X goals and 
+Y
+Y assists.
+Find out the player with more points this season
+
+
+
+#include <stdio.h>
+
+int main() {
+    int x;
+    scanf("%d", &x);
+
+    for (int i = 0; i < x; i++) {
+        int a,b,c,x,y,z;
+
+        scanf("%d %d %d", &a, &b, &c);
+        scanf("%d %d %d", &x, &z, &y);
+
+        int messi = a + b + c;
+        int ronaldo = x + y + z;
+
+        if (messi > ronaldo)
+            printf("Messi\n");
+        else if (ronaldo > messi)
+            printf("Ronaldo\n");
+        else
+            printf("Equal\n");
+    }
+
+}
