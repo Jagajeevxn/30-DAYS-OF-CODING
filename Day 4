@@ -1,0 +1,61 @@
+Fever
+Chef is not feeling well today. He measured his body temperature using a thermometer and it came out to be X °F.
+
+A person is said to have fever if his body temperature is strictly greater than 98 °F.
+
+Determine if Chef has fever or not.
+
+#include <stdio.h>
+
+int main(void) {
+    int t;
+    scanf("%d", &t);
+
+    while (t--) {
+        int x;
+        scanf("%d", &x);
+
+        if (x > 98)            printf("YES\n");
+        else
+            printf("NO\n");
+    }
+
+    return 0;
+}
+
+Bus Seat Numbering
+There is a bus with 30 seats. The seats are numbered from 1 to 30, and the numbering is as depicted in this image.
+
+
+As can be seen in the image, the bus is divided into two decks - The Lower deck, and the Upper deck, with 15 seats each. And some of the seats come as Single and some as Double. For example, Seats 1 and 2 are Double, whereas Seat 11 is a Single.
+
+You will be given a Seat number, and your job is to classify it as one of these 4 types:
+
+Lower Single
+Lower Double
+Upper Single
+Upper Double
+
+
+include <stdio.h>
+
+int main(void) {
+    int t;
+    scanf("%d", &t);
+
+    while (t--) {
+        int x;
+        scanf("%d", &x);
+
+        if (x >= 1 && x <= 10)
+            printf("Lower Double\n");
+        else if (x >= 11 && x <= 15)
+            printf("Lower Single\n");
+        else if (x >= 16 && x <= 25)
+            printf("Upper Double\n");
+        else
+            printf("Upper Single\n");
+    }
+
+    return 0;
+}
